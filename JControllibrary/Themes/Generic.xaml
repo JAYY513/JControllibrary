@@ -4,6 +4,7 @@
     xmlns:local="clr-namespace:JControllibrary">
     <ResourceDictionary.MergedDictionaries>
         <!--<ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/Resource/Shadows.xaml" />-->
+        <!--123-->
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/Brushes/OrangeBrushes.xaml"/>
         <!--<ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/Brushes/DarkBrushes.xaml"/>-->
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JListBox.xaml"/>

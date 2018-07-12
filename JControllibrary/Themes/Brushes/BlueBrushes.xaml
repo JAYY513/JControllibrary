@@ -13,21 +13,6 @@
     <SolidColorBrush x:Key="MidForegroundBrush" Color="White" po:Freeze="True" />
     <SolidColorBrush x:Key="DarkBrush" Color="{StaticResource Primary700}" po:Freeze="True" />
     <SolidColorBrush x:Key="DarkForegroundBrush" Color="{StaticResource Primary700Foreground}" po:Freeze="True" />
-    <!--区分颜色，多用在Trigger-->
-    <SolidColorBrush x:Key="LightDividerBrush" Color="#efebef" po:Freeze="True" />
-    <SolidColorBrush x:Key="DividerBrush" Color="#FFCCCCCC" po:Freeze="True" />
-    <!--选择器颜色-->
-    <SolidColorBrush x:Key="SelectionBrush" Color="#FFDeDeDe" po:Freeze="True" />
-    <!--主体颜色，例如Path-->
-    <SolidColorBrush x:Key="BodyBrush" Color="#DD000000" po:Freeze="True" />
-    <!--面板颜色-->
-    <SolidColorBrush x:Key="LightPanelBrush" Color="#FFF4FFFF" po:Freeze="True" />
-    <SolidColorBrush x:Key="PanelBrush" Color="#FFFFFF" po:Freeze="True" />
-    <SolidColorBrush x:Key="PanelForegroundBrush" Color="Black" po:Freeze="True" />
-    
-    <SolidColorBrush x:Key="LightAccentBrush" Color="#1C97EA" po:Freeze="True" />
-    <SolidColorBrush x:Key="LightAccentForegroundBrush" Color="White" po:Freeze="True" />
-    <SolidColorBrush x:Key="MidAccentBrush" Color="#007ACC" po:Freeze="True" />
-    <SolidColorBrush x:Key="MidAccentForegroundBrush" Color="White" po:Freeze="True" />
-    
+    <SolidColorBrush x:Key="PanelBrush" Color="White" po:Freeze="True"></SolidColorBrush>
+
 </ResourceDictionary>
