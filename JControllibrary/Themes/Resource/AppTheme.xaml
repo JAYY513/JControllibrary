@@ -3,6 +3,7 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
     <CornerRadius x:Key="LittleCornerRadius">2</CornerRadius>
     <CornerRadius x:Key="ABLittleCornerRadius">2 2 0 0</CornerRadius>
+    <CornerRadius x:Key="CDLittleCornerRadius">0 0 2 2</CornerRadius>
     <CornerRadius x:Key="MidCornerRadius">6 6 6 6</CornerRadius>
     <CornerRadius x:Key="ABMidCornerRadius">6 6 0 0</CornerRadius>
     <Thickness x:Key="MidBorderThickness">2</Thickness>

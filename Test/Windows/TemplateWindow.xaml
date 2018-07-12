@@ -61,5 +61,19 @@
                 <CheckBox >123</CheckBox>
             </ListBox.Items>
         </ListBox>
+        <Border Grid.Row="1" >
+            <panels:EffectPanel >
+                <panels:EffectPanel.Background>
+                    <ImageBrush ImageSource="/Test;component/Resources/PaperEffect.png"/>
+                </panels:EffectPanel.Background>
+                <Border  Margin="10">
+                    <panels:HollowPanel Margin="10" InsideColor="#604F3A3A">
+                        <Border  Background="Gray">
+                            <jcontrollibrary:HollowText FontSize="50" Fill="SkyBlue" Text="132" IsProgressBar="False"></jcontrollibrary:HollowText>
+                        </Border>
+                    </panels:HollowPanel>
+                </Border>
+            </panels:EffectPanel>
+        </Border>
     </Grid>
 </Window>

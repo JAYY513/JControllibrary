@@ -63,6 +63,7 @@
     <Compile Include="HollowText.cs" />
     <Compile Include="JGroupBox.cs" />
     <Compile Include="JListBox.cs" />
+    <Compile Include="Panels\ClippingBorder.cs" />
     <Compile Include="Panels\EffectPanel.cs" />
     <Compile Include="Panels\HollowPanel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -78,7 +79,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ComboBoxSelectItem.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

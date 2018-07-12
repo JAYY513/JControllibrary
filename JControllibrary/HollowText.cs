@@ -36,10 +36,7 @@ namespace JControllibrary
         {
             tempValue = ValueNum;
             tempY = Y;
-            //    bitmapSource = new BitmapImage(new Uri(BaseUriHelper.GetBaseUri(this), "Resources/wave.png"));
-
             bitmapSource = new BitmapImage(new Uri("pack://application:,,,/JControllibrary;component/Resources/wave.png", UriKind.Absolute));
-            //   bitmapSource = new BitmapImage(new Uri("Resources/wave.png", UriKind.Relative));
             waveWidth = ActualWidth * 0.25;
 
             timer.Interval = FPS;
@@ -154,8 +151,7 @@ namespace JControllibrary
                     Viewport = new Rect(0, 0, 0.25, 1)
                 };
                 drawingContext.DrawRectangle(imageBrush, null, new Rect(-waveWidth * 2 + x, (ActualHeight - textHeight) / 2, ActualWidth + waveWidth * 2, textHeight));
-
-
+                
                 RectangleGeometry rectangleGeometry = new RectangleGeometry(new Rect(-1, -1, ActualWidth + 2, ActualHeight + 2), 0, 0);
 
                 CombinedGeometry combinedGeometry = new CombinedGeometry
@@ -166,11 +162,6 @@ namespace JControllibrary
                 };
                 drawingContext.DrawGeometry(Fill, new Pen(Stroke, StrokeThickness), combinedGeometry);
             }
-
-
-
-
-
         }
 
         double textHeight;
@@ -193,17 +184,16 @@ namespace JControllibrary
             {
                 Trimming = TextTrimming.CharacterEllipsis
             };
-            // formattedText.MaxTextWidth = ActualWidth;
+            // 同步控件大小等于字体大小
             Width = formattedText.Width;
             Height= formattedText.Height;
-            // 创建表示文字的几何对象。        
-
 
             // 基于格式化文字的大小设置空心文字的大小。         
-
             textHeight = formattedText.Height;
 
             HorizontalAlignment horizontalAlignment = (HorizontalAlignment)GetValue(HorizontalContentAlignmentProperty);
+
+            // 创建表示文字的几何对象。        
             switch (horizontalAlignment)
             {
                 case HorizontalAlignment.Center:
@@ -243,25 +233,17 @@ namespace JControllibrary
         // Using a DependencyProperty as the backing store for HorizontalContentAlignment.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty HorizontalContentAlignmentProperty =
             DependencyProperty.RegisterAttached("HorizontalContentAlignment", typeof(HorizontalAlignment), typeof(HollowText), new PropertyMetadata(HorizontalAlignment.Center));
-
-
-
-
-
-
+        
         public int ValueNum
         {
             get { return (int)GetValue(ValueNumProperty); }
             set { SetValue(ValueNumProperty, value); }
         }
 
-
         // Using a DependencyProperty as the backing store for ValueNum.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ValueNumProperty =
             DependencyProperty.RegisterAttached("ValueNum", typeof(int), typeof(HollowText), new PropertyMetadata(0, OnValueNumChanged));
-
-
-
+        
         private static void OnValueNumChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             HollowText HollowText = (HollowText)d;
@@ -299,7 +281,6 @@ namespace JControllibrary
         }
 
 
-
         public double Y
         {
             get
@@ -308,11 +289,7 @@ namespace JControllibrary
                 return y;
             }
         }
-
-
-
-
-
+        
         #region DependencyProperties
 
 
@@ -443,8 +420,7 @@ namespace JControllibrary
                 null));
 
         #endregion
-
-
+        
         #region Public Methods
 
         /// <summary>
@@ -462,8 +438,7 @@ namespace JControllibrary
         {
             Text = value;
         }
-
-
+        
         #endregion
     }
 }

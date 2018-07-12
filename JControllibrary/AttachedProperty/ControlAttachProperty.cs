@@ -29,7 +29,7 @@ namespace JControllibrary.AttachedProperty
 
         #endregion
 
-
+        #region ComboBox IsDropDownOpen
 
 
         public static bool GetIsDropDownOpen(DependencyObject obj)
@@ -66,5 +66,7 @@ namespace JControllibrary.AttachedProperty
                 }
             }
         }
+
+        #endregion
     }
 }

@@ -9,8 +9,8 @@
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JListBox.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JGroupBox.xaml"/>
         <!--<ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JScrollBar.xaml"/>-->
-        <!--<ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/HollowPanel.xaml"/>-->
-        <!--<ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/EffectPanel.xaml"/>-->
+        <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/HollowPanel.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/EffectPanel.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JCheckBox.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JComboBox.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JComboBoxItem.xaml"/>

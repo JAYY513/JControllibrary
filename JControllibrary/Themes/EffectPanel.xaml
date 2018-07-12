@@ -2,13 +2,13 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:JControllibrary.Panels">
     <Style TargetType="{x:Type local:EffectPanel}">
-        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <!--<Setter Property="HorizontalAlignment" Value="Stretch"/>-->
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:EffectPanel}">
-                    <Border Background="{TemplateBinding Background}">
-                        <Border Margin="20 10" Background="White">
-                            <ContentPresenter  Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Content="{TemplateBinding  Content}"></ContentPresenter>
+                    <Border  Background="{TemplateBinding Background}">
+                        <Border  Margin="20 10" Background="White">
+                            <ContentPresenter   Content="{TemplateBinding  Content}"></ContentPresenter>
                         </Border>                       
                     </Border>
                 </ControlTemplate>
