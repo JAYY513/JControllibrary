@@ -17,7 +17,8 @@ namespace Test
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            new MainWindow() { DataContext = new MainWindowViewModel() }.Show();
+           
+           new MainWindow() { DataContext = new MainWindowViewModel() }.Show();
         }
     }
 }

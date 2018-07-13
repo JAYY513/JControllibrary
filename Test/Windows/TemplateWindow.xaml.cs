@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JControllibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace Test.Windows
     /// <summary>
     /// TemplateWindow.xaml 的互動邏輯
     /// </summary>
-    public partial class TemplateWindow : Window
+    public partial class TemplateWindow
     {
         public TemplateWindow()
         {

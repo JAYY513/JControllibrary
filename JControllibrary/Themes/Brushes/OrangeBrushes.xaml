@@ -2,11 +2,15 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
                     >
-    <SolidColorBrush x:Key="LightBrush" Color="#FFFFc32E" po:Freeze="True"></SolidColorBrush>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/Colors/OrangeColor.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+    <SolidColorBrush x:Key="LightBrush" Color="{StaticResource Primary200}" po:Freeze="True"></SolidColorBrush>
     <SolidColorBrush x:Key="LightForegroundBrush" Color="White" po:Freeze="True"></SolidColorBrush>
-    <SolidColorBrush x:Key="MidBrush" Color="#FFFFB32E" po:Freeze="True"></SolidColorBrush>
+    <SolidColorBrush x:Key="MidBrush" Color="{StaticResource Primary500}" po:Freeze="True"></SolidColorBrush>
     <SolidColorBrush x:Key="MidForegroundBrush" Color="White" po:Freeze="True"></SolidColorBrush>
-    <SolidColorBrush x:Key="DarkBrush" Color="#FFFFA02E" po:Freeze="True"></SolidColorBrush>
+    <SolidColorBrush x:Key="DarkBrush" Color="{StaticResource Primary700}" po:Freeze="True"></SolidColorBrush>
     <SolidColorBrush x:Key="DarkForegroundBrush" Color="White" po:Freeze="True"></SolidColorBrush>
     <SolidColorBrush x:Key="PanelBrush" Color="White" po:Freeze="True"></SolidColorBrush>
     

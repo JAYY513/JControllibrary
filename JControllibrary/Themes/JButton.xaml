@@ -4,8 +4,14 @@
                     xmlns:ap="clr-namespace:JControllibrary.AttachedProperty"
                   xmlns:converters="clr-namespace:JControllibrary.Converters"
                     xmlns:panels="clr-namespace:JControllibrary.Panels">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/Colors/OrangeColor.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
     <BrushConverter x:Key="BrushConverter" />
     <converters:ColorToBrushConverter x:Key="ColorToBrushConverter"></converters:ColorToBrushConverter>
+    
     <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource MidBrush}"/>
@@ -102,6 +108,109 @@
                             <Setter Property="Opacity" TargetName="outborder" Value="1"/>
                         </MultiTrigger>
 
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" Value="0.23"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle3" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{DynamicResource MidBrush}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource MidForegroundBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="ap:ShadowAssist.ShadowDepth" Value="Depth1"/>
+        <Setter Property="ap:ControlAttachProperty.CornerRadius" Value="{DynamicResource LittleCornerRadius}"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                             
+                           <Grid>
+                        <Border x:Name="border" Effect="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(ap:ShadowAssist.ShadowDepth), Converter={x:Static converters:ShadowConverter.Instance}}" CornerRadius="{TemplateBinding ap:ControlAttachProperty.CornerRadius}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                                    <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>                              
+                            </Grid>
+                     
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="ap:ShadowAssist.Darken" TargetName="border" Value="True"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="true"></Condition>
+                                <Condition Property="IsPressed" Value="true"></Condition>
+                            </MultiTrigger.Conditions>                          
+                            <Setter Property="ap:ShadowAssist.Darken" TargetName="border" Value="False"/>
+                        </MultiTrigger>
+
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" Value="0.23"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle4" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="ap:ShadowAssist.ShadowDepth" Value="Depth1"/>
+        <Setter Property="ap:ControlAttachProperty.CornerRadius" Value="{DynamicResource LittleCornerRadius}"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Name="grid">
+                        <Border x:Name="effectborder" Opacity="0" ap:ShadowAssist.Darken="True" Margin="1 1 1 0" Background="{TemplateBinding Background}" Effect="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(ap:ShadowAssist.ShadowDepth), Converter={x:Static converters:ShadowConverter.Instance}}" CornerRadius="{TemplateBinding ap:ControlAttachProperty.CornerRadius}" ></Border>
+                        <Border x:Name="border"  Background="{TemplateBinding Background}" SnapsToDevicePixels="true" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--<Setter Property="ap:ShadowAssist.Darken" TargetName="effectborder" Value="Darken2"/>-->
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetProperty="(Background).(SolidColorBrush.Color)" To="{StaticResource Primary500}" Duration="0:0:0.3"></ColorAnimation>
+                                        <ColorAnimation Storyboard.TargetProperty="(Foreground).(SolidColorBrush.Color)" To="White" Duration="0:0:0.3"></ColorAnimation>
+                                        <DoubleAnimation Storyboard.TargetName="effectborder" Storyboard.TargetProperty="Opacity" To="1" BeginTime="0:0:0.1" Duration="0:0:0.4"></DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetProperty="(Background).(SolidColorBrush.Color)" To="Transparent" Duration="0:0:0.3"></ColorAnimation>
+                                        <ColorAnimation Storyboard.TargetProperty="(Foreground).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.3"></ColorAnimation>
+                                        <DoubleAnimation Storyboard.TargetName="effectborder" Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.3"></DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="true"></Condition>
+                                <Condition Property="IsPressed" Value="true"></Condition>
+                            </MultiTrigger.Conditions>                            
+                            <Setter Property="Margin" TargetName="effectborder" Value="1"/>
+                            <Setter Property="Margin" TargetName="grid" Value="0 1 0 -1"/>
+                        </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Opacity" Value="0.23"/>
                         </Trigger>

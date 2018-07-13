@@ -16,6 +16,7 @@
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JComboBox.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JComboBoxItem.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/JControllibrary;component/Themes/JWindow.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     <!--<Style BasedOn="{StaticResource ScrollBarStyle2}" TargetType="{x:Type ScrollBar}">
     </Style>-->
@@ -37,5 +38,5 @@
     </Style>
     
     <Style BasedOn="{StaticResource CheckBoxStyle1}" TargetType="CheckBox"/>
-
+    
 </ResourceDictionary>
