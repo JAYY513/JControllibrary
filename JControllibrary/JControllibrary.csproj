@@ -60,9 +60,11 @@
     <Compile Include="AttachedProperty\ControlAttachProperty.cs" />
     <Compile Include="AttachedProperty\ShadowDepth.cs" />
     <Compile Include="Converters\ColorToBrushConverter.cs" />
+    <Compile Include="Converters\DoubleToPoint.cs" />
     <Compile Include="Converters\RectBottomConverter.cs" />
     <Compile Include="Converters\ShadowConverter.cs" />
     <Compile Include="HollowText.cs" />
+    <Compile Include="JButton.cs" />
     <Compile Include="JGroupBox.cs" />
     <Compile Include="JListBox.cs" />
     <Compile Include="JWindow.cs" />

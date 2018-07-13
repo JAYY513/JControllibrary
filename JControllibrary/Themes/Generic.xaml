@@ -31,9 +31,7 @@
     </Style>
     <Style BasedOn="{StaticResource ComboBoxItemStyle1}" TargetType="{x:Type ComboBoxItem}">
     </Style>
-    <Style BasedOn="{StaticResource ButtonStyle1}" TargetType="{x:Type Button}">  
-    </Style>
-
+   
     <Style BasedOn="{StaticResource ListBoxStyle1}" TargetType="{x:Type ListBox}">
     </Style>
     

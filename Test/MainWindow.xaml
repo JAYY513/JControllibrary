@@ -8,15 +8,59 @@
         mc:Ignorable="d" 
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        <Style TargetType="Button" BasedOn="{StaticResource ButtonStyle4}">
+        <Style TargetType="JControllibrary:JButton" >
+            <Setter Property="Width" Value="90"/>
+            <Setter Property="Height" Value="63"/>
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+        <Style TargetType="Button" >
             <Setter Property="Width" Value="90"/>
             <Setter Property="Height" Value="63"/>
             <Setter Property="Margin" Value="5"></Setter>
         </Style>
     </Window.Resources>
     <WrapPanel>
-        <Button  Command="{Binding TemplateCommand}">模板</Button>
-        <Button Click="BlueClick">BlueClick</Button>
-        <Button Click="RedClick">BlueClick</Button>
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+
+
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Command="{Binding TemplateCommand}">模板</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="BlueClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
+        <JControllibrary:JButton ButtonStyle="Hollow" Click="RedClick">BlueClick</JControllibrary:JButton>
     </WrapPanel>
 </JControllibrary:JWindow>
